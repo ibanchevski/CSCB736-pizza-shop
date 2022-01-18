@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pizza Shop</string>
+    <string name="action_favorites">Favorites</string>
+    <string name="action_cart">Cart</string>
+    <string name="shopping_cart_details">Shopping Cart details</string>
+    <string name="order_now">Order Now</string>
+    <string name="favorites">Favorites</string>
+    <string name="add_to_favorites">Add to favorites</string>
+</resources>

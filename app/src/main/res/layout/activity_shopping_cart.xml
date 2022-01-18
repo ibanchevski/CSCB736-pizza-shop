@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCartActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:showDividers="middle"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/shopping_cart_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/shopping_cart_details" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full name" />
+
+        <TextView
+            android:id="@+id/pizza_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/pizza_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="9dp"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Toppings"/>
+
+        <CheckBox
+            android:id="@+id/t_mushrooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mushrooms"
+            android:onClick="onToppingSelect"/>
+
+        <CheckBox
+            android:id="@+id/t_cheese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cheese"
+            android:onClick="onToppingSelect"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:text="Total"/>
+
+        <TextView
+            android:id="@+id/pizza_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="9dp"
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/design_default_color_primary_dark"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="9dp"
+            android:text="@string/order_now"
+            android:onClick="onOrder"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:onClick="addToFavorites"
+            android:text="@string/add_to_favorites" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
